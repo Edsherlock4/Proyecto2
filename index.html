@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolo HTTP</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+
+    <header class="hero">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <h2 class="nav__title">Protocolo HTTP</h2>
+            </div>
+
+            <ul class="nav__link nav__link--menu">
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Acerca de</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#" class="nav__links">Contacto</a>
+                </li>
+
+                <img src="./images/close.svg" class="nav__close">
+            </ul>
+    
+            <div class="nav__menu">
+                <img src="./images/menu.svg" class="nav__img">
+            </div>
+        </nav>
+
+        <section class="hero__container container">
+            <h1 class="hero__title">Introducción.</h1>
+            <p class="hero__paragraph">El Protocolo de Transferencia de Hipertexto (HTTP, por sus siglas en inglés: 
+                HyperText Transfer Protocol) es el protocolo fundamental para la comunicación 
+                en la World Wide Web (WWW). Define cómo los mensajes son formateados y 
+                transmitidos, y cómo los servidores y navegadores deben responder a diversas 
+                solicitudes. HTTP permite la transferencia de archivos, páginas web y otros 
+                recursos de Internet mediante una arquitectura cliente-servidor.
+                </p>
+    </header>
+
+    <main>
+        <section class="container about">
+            <h2 class="subtitle">Historia y Evolución</h2>
+            <p class="about__paragraph">HTTP fue desarrollado a finales de la década de 1980 y principios de la de 1990 
+                por Tim Berners-Lee en el CERN. La primera versión, HTTP/0.9, se diseñó 
+                únicamente para la transferencia de archivos HTML. A lo largo de los años, ha 
+                evolucionado para mejorar su eficiencia y seguridad:
+                </p>
+
+                <div class="about__main">
+                    <article>
+                        <h3 class="about__title">HTTP/0.9 (1991):</h3>
+                        <p class="about__paragraph">Soportaba solo la transferencia de texto en HTML.</p>
+                    </article>
+                    <article>
+                        <h3 class="about__title">HTTP/1.0 (1996):</h3>
+                        <p class="about__paragraph">Introdujo los encabezados HTTP y permitió la 
+                            transferencia de otros tipos de archivos.
+                            </p>
+                    </article>
+                    <article>
+                        <h3 class="about__title">HTTP/1.1 (1997): </h3>
+                        <p class="about__paragraph">Mejoró el rendimiento con conexiones persistentes y 
+                            soporte para múltiples solicitudes por conexión.</p>
+                    </article>
+                    <article>
+                        <h3 class="about__title">HTTP/2 (2015):</h3>
+                        <p class="about__paragraph">Incrementó la velocidad mediante el uso de multiplexación 
+                            y compresión de encabezados.</p>
+                    </article>
+                    <article>
+                        <h3 class="about__title">HTTP/3 (en desarrollo desde 2018): </h3>
+                        <p class="about__paragraph">Basado en QUIC, mejora la latencia y 
+                            la seguridad con una mejor gestión de la conexión.
+                            </p>
+                    </article>
+                </div>
+        </section>
+
+        <section class="knowledge">
+            <div class="knowledge__container container">
+                <div class="knowledge__texts">
+                    <h2 class="subtitle">
+                        ¿Cómo funciona HTTP?
+                    </h2>
+                    <p class="knowledge_paragraph">HTTP sigue un modelo cliente-servidor en el cual un cliente (generalmente un 
+                        navegador web) envía una solicitud a un servidor, que responde con la información solicitada. Este proceso involucra los siguientes elementos:
+                        <ol>1. Cliente HTTP: El navegador u otra aplicación que inicia una solicitud HTTP.</ol>
+                        <ol>2. Servidor HTTP: Responde a las solicitudes del cliente con los recursos adecuados.</ol>
+                        <ol>3. Métodos HTTP: Indican la acción que el cliente quiere realizar sobre un recurso.</ol>
+                        <ol>4. Códigos de estado: Indican el resultado de la solicitud.</ol>
+                        <ol>5. Encabezados HTTP: Contienen información adicional sobre la solicitud o la respuesta.</ol>
+                        <ol>6. Cookies y Sesiones: HTTP permite el uso de cookies para mantener información sobre las sesiones de usuario.</ol>
+                        <ol>7. Redirecciones: HTTP puede redirigir solicitudes a otras URLs utilizando códigos de estado como 301 y 302.</ol>
+                        </p>
+                </div>
+
+                <figure class="knowledge_picture">
+                    <img src="./images/Diseño sin título (1).png" class="knowledge__img">
+                </figure>
+            </div>
+
+        </section>
+
+       <section class="testimony">
+        <div class="testimony__container container">
+            <img src="./images/leftarrow.svg" class="testimony__arrow" id="before">
+            <section class="testimony__body testimony__body--show" data-id="1">
+                <div class="testimony__texts">
+                    <h2 class="subtitle">Métodos HTTP <span class="testimony__course">HTTP define varios métodos de solicitud, los más comunes son:
+                        • GET: Solicita la representación de un recurso sin modificarlo.
+                        • POST: Envía datos al servidor para su procesamiento.</span></h2>
+                        <p class="testimony__review">
+                            <ol>• PUT: Reemplaza un recurso en el servidor.</ol>
+                            <ol>• DELETE: Elimina un recurso en el servidor.</ol>
+                            <ol>• HEAD: Similar a GET, pero solo obtiene los encabezados de la respuesta.</ol>
+                            <ol>• OPTIONS: Muestra los métodos soportados por el servidor.</ol>
+                            <ol>• PATCH: Aplica modificaciones parciales a un recurso.</ol>
+                            <ol>• TRACE: Devuelve la solicitud recibida para diagnóstico.</ol>
+                            <ol>• CONNECT: Establece una conexión a un servidor proxy.</ol>
+                            </p>
+                </div>
+                <figure class="testimony__picture">
+                    <img src="images/OIP.HTTPjpeg.jpeg" class="testimony__img">
+                </figure>
+            </section>
+            <section class="testimony__body" data-id="2">
+                <div class="testimony__texts">
+                    <h2 class="subtitle">HTTP vs HTTPS<span class="testimony__course">HTTPS (HTTP Secure) es una versión segura de HTTP que utiliza TLS/SSL para 
+                        cifrar la comunicación. Sus principales ventajas incluyen:</span></h2>
+                        <p class="testimony__review">• Cifrado: Protege los datos transmitidos contra ataques de interceptación.
+                            • Autenticación: Verifica la identidad del servidor para prevenir ataques de 
+                            suplantación.
+                            • Integridad: Asegura que los datos no sean modificados durante la 
+                            transmisión.
+                            • Mejor ranking SEO: Los motores de búsqueda favorecen sitios web con 
+                            HTTPS.</p>
+                </div>
+                <figure class="testimony__picture">
+                    <img src="images/HTTP vs HTTPS.jpeg" class="testimony__img">
+                </figure>
+            </section>
+            <section class="testimony__body" data-id="3">
+                <div class="testimony__texts">
+                    <h2 class="subtitle">Implementación de HTTP en la Web, <span class="testimony__course">Los desarrolladores pueden implementar HTTP en sus aplicaciones web utilizando 
+                        servidores como Apache, NGINX o frameworks como Express.js en Node.js. Los 
+                        navegadores y herramientas como Postman permiten probar solicitudes HTTP de 
+                        manera eficiente.</span></h2>
+                        <p class="testimony__review">HTTP en APIs
+                            HTTP es el protocolo base para la mayoría de las APIs RESTful, que permiten la 
+                            comunicación entre diferentes sistemas. Las APIs utilizan métodos HTTP para 
+                            definir operaciones estándar en los recursos.
+                            HTTP en el Futuro
+                            A medida que la tecnología avanza, HTTP sigue evolucionando. HTTP/3 introduce 
+                            mejoras significativas al basarse en el protocolo QUIC, que reduce la latencia y 
+                            mejora la seguridad de las conexiones. Además, la adopción de mecanismos 
+                            como HSTS (HTTP Strict Transport Security) garantiza que los sitios web usen 
+                            siempre conexiones seguras.
+                            Con la expansión del Internet de las Cosas (IoT) y la creciente necesidad de 
+                            conexiones eficientes, se prevé que HTTP continúe adaptándose a las nuevas 
+                            demandas del entorno digital. Se espera una mayor integración con tecnologías 
+                            como 5G, computación en la nube y microservicios para ofrecer experiencias web 
+                            más rápidas y seguras.</p>
+                </div>
+                <figure class="testimony__picture">
+                    <img src="images/https-vs-http.jpg" class="testimony__img">
+                </figure>
+            </section>
+            <img src="./images/rightarrow.svg" class="testimony__arrow" id="next">
+        </div>
+       </section>
+
+       <section class="questions container">
+        <h2 class="subtitle">Preguntas frecuentes</h2>
+        <p class="questions__paragraph">HTTP es el protocolo base de la web, permitiendo la transferencia de información 
+            entre clientes y servidores. Su evolución ha llevado a mejoras significativas en 
+            rendimiento y seguridad, especialmente con la adopción de HTTP/2 y HTTP/3. 
+            Con el avance de la tecnología, HTTP seguirá adaptándose para responder a las 
+            necesidades de una Internet más rápida y segura. La adopción de HTTPS, la 
+            optimización de API REST y la integración con nuevas tecnologías garantizarán su 
+            relevancia en el futuro de la comunicación digital.</p>
+
+            <section class="questions__container">
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Qué es HTTP?<span class="questions__arrow">
+                            <img src="images/arrow.svg" class="questions__img">
+                        </span>
+                    </h3>
+
+                    <p class="questions__show">HTTP (HyperText Transfer Protocol) es un protocolo de comunicación utilizado para la transferencia de información en la web.</p>
+                    </div>
+                </article>
+            </section>
+            <section class="questions__container">
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Cuál es la diferencia entre HTTP y HTTPS?<span class="questions__arrow">
+                            <img src="images/arrow.svg" class="questions__img">
+                        </span>
+                    </h3>
+
+                    <p class="questions__show">HTTPS (HyperText Transfer Protocol Secure) es la versión segura de HTTP, ya que utiliza cifrado SSL/TLS para proteger la comunicación entre el cliente y el servidor.</p>
+                    </div>
+                </article>
+            </section>
+            <section class="questions__container">
+                <article class="questions__padding">
+                    <div class="questions__answer">
+                        <h3 class="questions__title">¿Qué es una cookie en HTTP?<span class="questions__arrow">
+                            <img src="images/arrow.svg" class="questions__img">
+                        </span>
+                    </h3>
+
+                    <p class="questions__show">Una cookie es un pequeño archivo de datos que el servidor envía al navegador y que se almacena para recordar información en futuras solicitudes.</p>
+                    </div>
+                </article>
+            </section>
+       </section>
+    </main>
+
+    <footer class="footer">
+        <section class="footer__container container">
+            <nav class="nav__nav--footer">
+                <h2 class="footer__title">Protocolo HTTP</h2>
+
+                <ul class="nav__link nav__link==footer">
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Inicio</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Acerca de</a>
+                    </li>
+                    <li class="nav__items">
+                        <a href="#" class="nav__links">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <form class="footer__form">
+                <h2 class="footer__newsletter">LOS AMO A TODOS</h2>
+                <div class="footer__inputs">
+                    <input type="email" placeholder="Email:" class="footer__input">
+                    <input type="submit" value="Registrate" class="footer__submit">
+                </div>
+            </form>
+        </section>
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="#" class="footer__icons"><img src="./images/facebook.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="./images/twitter.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="./images/youtube.svg" class="footer__img"></a>
+            </div>
+            <h3 class="footer__copyright">Derechos reservados &copy; Edgar Calvo</h3>
+        </section>
+    </footer>
+
+    
+    <script src="js/slider.js"></script>
+    <script src="js/questions.js"></script>
+    <script src="./js/menu.js"></script>
+</body>
+</html>
